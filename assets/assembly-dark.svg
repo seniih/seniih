@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="540" viewBox="0 0 880 540" role="img" aria-labelledby="t">
+  <title id="t">System drawing of the TrendArsa platform: mobile app, admin panel and websites on Supabase, with Cloudflare R2 for images and Firebase Cloud Messaging for push</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9" fill="none" stroke="#C9D1D9" stroke-width="1.2"/>
+    </marker>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#21262D"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #C9D1D9; }
+    .muted { fill: #8B949E; }
+    .accent { fill: #7AA2F7; }
+    .label { font-size: 8.5px; letter-spacing: 1.2px; fill: #8B949E; }
+    .line { stroke: #C9D1D9; fill: none; }
+    .thin { stroke: #C9D1D9; stroke-width: 0.8; fill: none; }
+    .hidden { stroke: #8B949E; stroke-width: 1; stroke-dasharray: 6 4; fill: none; }
+  </style>
+  <rect x="0" y="0" width="880" height="540" fill="#0D1117"/>
+  <rect x="4" y="4" width="872" height="532" class="line" stroke-width="1.5"/>
+  <rect x="20" y="20" width="840" height="500" class="line" stroke-width="1"/>
+  <text x="90.0" y="15.5" font-size="9" text-anchor="middle" class="muted">1</text>
+  <text x="90.0" y="531.5" font-size="9" text-anchor="middle" class="muted">1</text>
+  <line x1="160.0" y1="4" x2="160.0" y2="20" class="thin"/>
+  <line x1="160.0" y1="520" x2="160.0" y2="536" class="thin"/>
+  <text x="230.0" y="15.5" font-size="9" text-anchor="middle" class="muted">2</text>
+  <text x="230.0" y="531.5" font-size="9" text-anchor="middle" class="muted">2</text>
+  <line x1="300.0" y1="4" x2="300.0" y2="20" class="thin"/>
+  <line x1="300.0" y1="520" x2="300.0" y2="536" class="thin"/>
+  <text x="370.0" y="15.5" font-size="9" text-anchor="middle" class="muted">3</text>
+  <text x="370.0" y="531.5" font-size="9" text-anchor="middle" class="muted">3</text>
+  <line x1="440.0" y1="4" x2="440.0" y2="20" class="thin"/>
+  <line x1="440.0" y1="520" x2="440.0" y2="536" class="thin"/>
+  <text x="510.0" y="15.5" font-size="9" text-anchor="middle" class="muted">4</text>
+  <text x="510.0" y="531.5" font-size="9" text-anchor="middle" class="muted">4</text>
+  <line x1="580.0" y1="4" x2="580.0" y2="20" class="thin"/>
+  <line x1="580.0" y1="520" x2="580.0" y2="536" class="thin"/>
+  <text x="650.0" y="15.5" font-size="9" text-anchor="middle" class="muted">5</text>
+  <text x="650.0" y="531.5" font-size="9" text-anchor="middle" class="muted">5</text>
+  <line x1="720.0" y1="4" x2="720.0" y2="20" class="thin"/>
+  <line x1="720.0" y1="520" x2="720.0" y2="536" class="thin"/>
+  <text x="790.0" y="15.5" font-size="9" text-anchor="middle" class="muted">6</text>
+  <text x="790.0" y="531.5" font-size="9" text-anchor="middle" class="muted">6</text>
+  <text x="12" y="85.5" font-size="9" text-anchor="middle" class="muted">A</text>
+  <text x="868" y="85.5" font-size="9" text-anchor="middle" class="muted">A</text>
+  <line x1="4" y1="145.0" x2="20" y2="145.0" class="thin"/>
+  <line x1="860" y1="145.0" x2="876" y2="145.0" class="thin"/>
+  <text x="12" y="210.5" font-size="9" text-anchor="middle" class="muted">B</text>
+  <text x="868" y="210.5" font-size="9" text-anchor="middle" class="muted">B</text>
+  <line x1="4" y1="270.0" x2="20" y2="270.0" class="thin"/>
+  <line x1="860" y1="270.0" x2="876" y2="270.0" class="thin"/>
+  <text x="12" y="335.5" font-size="9" text-anchor="middle" class="muted">C</text>
+  <text x="868" y="335.5" font-size="9" text-anchor="middle" class="muted">C</text>
+  <line x1="4" y1="395.0" x2="20" y2="395.0" class="thin"/>
+  <line x1="860" y1="395.0" x2="876" y2="395.0" class="thin"/>
+  <text x="12" y="460.5" font-size="9" text-anchor="middle" class="muted">D</text>
+  <text x="868" y="460.5" font-size="9" text-anchor="middle" class="muted">D</text>
+  <rect x="21" y="21" width="838" height="498" fill="url(#dots)"/>
+
+  <text x="44" y="52" font-size="14" font-weight="700" letter-spacing="2">ASSY 01 — TRENDARSA PLATFORM</text>
+  <text x="836" y="52" font-size="10" letter-spacing="1.5" text-anchor="end" class="muted">EXPLODED VIEW · NOT TO SCALE</text>
+  <line x1="44" y1="62" x2="836" y2="62" class="thin"/>
+
+  <!-- clients -->
+  <rect x="44" y="96" width="222" height="64" class="line" stroke-width="1.2"/>
+  <text x="56" y="126.0" font-size="13" font-weight="700">Mobile app</text>
+  <text x="56" y="143.0" font-size="10.5" class="muted">Flutter · iOS + Android</text>
+  <rect x="330" y="96" width="222" height="64" class="line" stroke-width="1.2"/>
+  <text x="342" y="126.0" font-size="13" font-weight="700">Admin panel</text>
+  <text x="342" y="143.0" font-size="10.5" class="muted">Next.js · Cloudflare Workers</text>
+  <rect x="614" y="96" width="222" height="64" class="line" stroke-width="1.2"/>
+  <text x="626" y="126.0" font-size="13" font-weight="700">Websites ×2</text>
+  <text x="626" y="143.0" font-size="10.5" class="muted">Next.js · Netlify · i18n</text>
+
+  <!-- client → backend flows -->
+  <line x1="155" y1="160" x2="155" y2="252" class="line" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="163" y="210.0" font-size="10" text-anchor="start" class="muted">auth · queries</text>
+  <line x1="500" y1="160" x2="500" y2="252" class="line" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="508" y="210.0" font-size="10" text-anchor="start" class="muted">CRUD as admin</text>
+  <line x1="725" y1="160" x2="725" y2="252" class="line" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="733" y="210.0" font-size="10" text-anchor="start" class="muted">public reads</text>
+
+  <!-- backend -->
+  <rect x="44" y="252" width="792" height="112" class="line" stroke-width="1.5"/>
+  <text x="56" y="272" font-size="10" letter-spacing="2" class="accent">SUPABASE</text>
+  <rect x="60" y="284" width="230" height="64" class="line" stroke-width="1.2"/>
+  <text x="72" y="314.0" font-size="13" font-weight="700">Auth</text>
+  <text x="72" y="331.0" font-size="10.5" class="muted">email · roles</text>
+  <rect x="312" y="284" width="256" height="64" class="line" stroke-width="1.2"/>
+  <text x="324" y="314.0" font-size="13" font-weight="700">Postgres + RLS</text>
+  <text x="324" y="331.0" font-size="10.5" class="muted">row-level policies</text>
+  <rect x="590" y="284" width="230" height="64" class="line" stroke-width="1.2"/>
+  <text x="602" y="314.0" font-size="13" font-weight="700">Edge Functions</text>
+  <text x="602" y="331.0" font-size="10.5" class="muted">Deno · server logic</text>
+
+  <!-- hidden line: image uploads pass behind the backend straight to storage -->
+  <path d="M342,160 L342,236 L301,236 L301,446" class="hidden" marker-end="url(#arrow)"/>
+  <text x="293" y="420" font-size="10" text-anchor="end" class="muted">signed PUT · images</text>
+
+  <line x1="705" y1="348" x2="705" y2="446" class="line" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="713" y="401.0" font-size="10" text-anchor="start" class="muted">push</text>
+
+  <!-- infrastructure -->
+  <rect x="150" y="446" width="250" height="58" class="line" stroke-width="1.2"/>
+  <text x="162" y="473.0" font-size="13" font-weight="700">Cloudflare R2</text>
+  <text x="162" y="490.0" font-size="10.5" class="muted">listing images</text>
+  <rect x="560" y="446" width="270" height="58" class="line" stroke-width="1.2"/>
+  <text x="572" y="473.0" font-size="13" font-weight="700">Firebase Cloud Messaging</text>
+  <text x="572" y="490.0" font-size="10.5" class="muted">notifications → app</text>
+
+  <!-- item balloons -->
+  <line x1="240" y1="98" x2="250" y2="78" class="thin"/>
+  <circle cx="240" cy="98" r="1.8" fill="#C9D1D9"/>
+  <circle cx="250" cy="78" r="11" fill="#0D1117" stroke="#7AA2F7" stroke-width="1.2"/>
+  <text x="250" y="82" font-size="11" text-anchor="middle" class="accent">1</text>
+  <line x1="526" y1="98" x2="536" y2="78" class="thin"/>
+  <circle cx="526" cy="98" r="1.8" fill="#C9D1D9"/>
+  <circle cx="536" cy="78" r="11" fill="#0D1117" stroke="#7AA2F7" stroke-width="1.2"/>
+  <text x="536" y="82" font-size="11" text-anchor="middle" class="accent">2</text>
+  <line x1="810" y1="98" x2="820" y2="78" class="thin"/>
+  <circle cx="810" cy="98" r="1.8" fill="#C9D1D9"/>
+  <circle cx="820" cy="78" r="11" fill="#0D1117" stroke="#7AA2F7" stroke-width="1.2"/>
+  <text x="820" y="82" font-size="11" text-anchor="middle" class="accent">3</text>
+  <line x1="250" y1="344" x2="270" y2="384" class="thin"/>
+  <circle cx="250" cy="344" r="1.8" fill="#C9D1D9"/>
+  <circle cx="270" cy="384" r="11" fill="#0D1117" stroke="#7AA2F7" stroke-width="1.2"/>
+  <text x="270" y="388" font-size="11" text-anchor="middle" class="accent">4</text>
+  <line x1="560" y1="344" x2="588" y2="384" class="thin"/>
+  <circle cx="560" cy="344" r="1.8" fill="#C9D1D9"/>
+  <circle cx="588" cy="384" r="11" fill="#0D1117" stroke="#7AA2F7" stroke-width="1.2"/>
+  <text x="588" y="388" font-size="11" text-anchor="middle" class="accent">5</text>
+  <line x1="812" y1="344" x2="840" y2="384" class="thin"/>
+  <circle cx="812" cy="344" r="1.8" fill="#C9D1D9"/>
+  <circle cx="840" cy="384" r="11" fill="#0D1117" stroke="#7AA2F7" stroke-width="1.2"/>
+  <text x="840" y="388" font-size="11" text-anchor="middle" class="accent">6</text>
+  <line x1="398" y1="476" x2="420" y2="476" class="thin"/>
+  <circle cx="398" cy="476" r="1.8" fill="#C9D1D9"/>
+  <circle cx="420" cy="476" r="11" fill="#0D1117" stroke="#7AA2F7" stroke-width="1.2"/>
+  <text x="420" y="480" font-size="11" text-anchor="middle" class="accent">7</text>
+  <line x1="826" y1="450" x2="845" y2="428" class="thin"/>
+  <circle cx="826" cy="450" r="1.8" fill="#C9D1D9"/>
+  <circle cx="845" cy="428" r="11" fill="#0D1117" stroke="#7AA2F7" stroke-width="1.2"/>
+  <text x="845" y="432" font-size="11" text-anchor="middle" class="accent">8</text>
+</svg>
