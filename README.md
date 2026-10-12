@@ -5,7 +5,7 @@
 
 I study computer engineering at Gebze Technical University and spend most of my time building software people actually use. For a real estate company I built the whole thing: the mobile app, the admin panel, two websites, and the accounting system that tracks every plot from purchase to payout.
 
-The rest of my time goes one layer down, into C, embedded systems and security. A drone is next.
+The rest of my time goes one layer down, into C, embedded systems and security.
 
 &nbsp;
 
@@ -41,13 +41,7 @@ The rest of my time goes one layer down, into C, embedded systems and security. 
 EMBEDDED    microcontrollers in C, one lesson at a time
 SECURITY    15-module self-study: networks → web → pentest → forensics
 C / C++     coursework and small systems programs
-DRONE       parts-list stage
 ```
-
-### Now <sub>as of Oct 2026</sub>
-
-- Building Fısıldio toward a first release on campus
-- CSE 321 and CSE 331 at GTU
 
 ### Toolkit
 
