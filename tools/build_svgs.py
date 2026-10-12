@@ -177,16 +177,16 @@ def assembly(c):
   {box(614, 96, 222, 64, "Websites ×2", "Next.js · Netlify · i18n")}
 
   <!-- client → backend flows -->
-  {flow(155, 160, 155, 252, "auth · queries")}
+  {flow(155, 160, 155, 252, "browse · admin login")}
   {flow(500, 160, 500, 252, "CRUD as admin")}
   {flow(725, 160, 725, 252, "public reads")}
 
   <!-- backend -->
   <rect x="44" y="252" width="792" height="112" class="line" stroke-width="1.5"/>
   <text x="56" y="272" font-size="10" letter-spacing="2" class="accent">SUPABASE</text>
-  {box(60, 284, 230, 64, "Auth", "email · roles")}
-  {box(312, 284, 256, 64, "Postgres + RLS", "row-level policies")}
-  {box(590, 284, 230, 64, "Edge Functions", "Deno · server logic")}
+  {box(60, 284, 230, 64, "Auth", "admin accounts only")}
+  {box(312, 284, 256, 64, "Postgres + RLS", "public read · admin write")}
+  {box(590, 284, 230, 64, "Edge Functions", "upload URL · push trigger")}
 
   <!-- hidden line: image uploads pass behind the backend straight to storage -->
   <path d="M342,160 L342,236 L301,236 L301,446" class="hidden" marker-end="url(#arrow)"/>

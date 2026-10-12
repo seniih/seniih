@@ -75,7 +75,7 @@
 
   <!-- client → backend flows -->
   <line x1="155" y1="160" x2="155" y2="252" class="line" stroke-width="1" marker-end="url(#arrow)"/>
-  <text x="163" y="210.0" font-size="10" text-anchor="start" class="muted">auth · queries</text>
+  <text x="163" y="210.0" font-size="10" text-anchor="start" class="muted">browse · admin login</text>
   <line x1="500" y1="160" x2="500" y2="252" class="line" stroke-width="1" marker-end="url(#arrow)"/>
   <text x="508" y="210.0" font-size="10" text-anchor="start" class="muted">CRUD as admin</text>
   <line x1="725" y1="160" x2="725" y2="252" class="line" stroke-width="1" marker-end="url(#arrow)"/>
@@ -86,13 +86,13 @@
   <text x="56" y="272" font-size="10" letter-spacing="2" class="accent">SUPABASE</text>
   <rect x="60" y="284" width="230" height="64" class="line" stroke-width="1.2"/>
   <text x="72" y="314.0" font-size="13" font-weight="700">Auth</text>
-  <text x="72" y="331.0" font-size="10.5" class="muted">email · roles</text>
+  <text x="72" y="331.0" font-size="10.5" class="muted">admin accounts only</text>
   <rect x="312" y="284" width="256" height="64" class="line" stroke-width="1.2"/>
   <text x="324" y="314.0" font-size="13" font-weight="700">Postgres + RLS</text>
-  <text x="324" y="331.0" font-size="10.5" class="muted">row-level policies</text>
+  <text x="324" y="331.0" font-size="10.5" class="muted">public read · admin write</text>
   <rect x="590" y="284" width="230" height="64" class="line" stroke-width="1.2"/>
   <text x="602" y="314.0" font-size="13" font-weight="700">Edge Functions</text>
-  <text x="602" y="331.0" font-size="10.5" class="muted">Deno · server logic</text>
+  <text x="602" y="331.0" font-size="10.5" class="muted">upload URL · push trigger</text>
 
   <!-- hidden line: image uploads pass behind the backend straight to storage -->
   <path d="M342,160 L342,236 L301,236 L301,446" class="hidden" marker-end="url(#arrow)"/>
